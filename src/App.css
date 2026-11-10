@@ -1,0 +1,185 @@
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #F5F3EA;
+  color: #142D24;
+}
+
+/* Application Header */
+.header {
+  text-align: center;
+  padding: 28px 20px;
+  background-color: #142D24;
+  border-bottom: 1px solid #A3B18A;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 10px 0;
+}
+
+/* Add Project Form */
+.add-project {
+  background-color: #FFFFFF;
+  border: 1px solid #DADCCB;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 35px auto;
+  max-width: 1100px;
+  box-shadow: 0 4px 15px rgba(20, 45, 36, 0.06);
+}
+
+.add-project h2 {
+  color: #345B45;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.add-project form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-project label {
+  font-weight: 600;
+  color: #142D24;
+}
+
+.add-project input,
+.add-project textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #DADCCB;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.add-project input:focus,
+.add-project textarea:focus,
+.search-bar input:focus {
+  border-color: #A3B18A;
+  box-shadow: 0 0 0 3px rgba(163, 177, 138, 0.2);
+}
+
+.add-project textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.add-project button {
+  width: fit-content;
+  padding: 12px 35px;
+  margin-top: 12px;
+  background-color: #345B45;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-project button:hover {
+  background-color: #142D24;
+}
+
+/* Search Bar */
+.search-bar {
+  max-width: 1100px;
+  margin: 35px auto 0;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #DADCCB;
+  border-radius: 12px 12px 0 0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #DADCCB;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+/* Project List */
+.project-list {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #DADCCB;
+  border-radius: 0 0 12px 12px;
+}
+
+.project-list h2 {
+  color: #345B45;
+  margin-top: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  background-color: #F5F3EA;
+  border: 1px solid #DADCCB;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card h3 {
+  color: #345B45;
+}
+
+.project-card p {
+  color: #536052;
+  line-height: 1.6;
+}
+
+.empty-message {
+  color: #536052;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-project,
+  .project-list,
+  .search-bar {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .add-project {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
