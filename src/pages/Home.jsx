@@ -7,13 +7,15 @@ import ProjectList from '../components/ProjectList'
 const projectsData = [
   {
     id: 1,
-    title: 'tea 1',
-    description: 'Description for Project 1'
+    title: 'Madagascar- Cinema booking website',
+    description: 'A web application that displays a list of movies currently showing, complete with posters, genres, showtimes, and ticket prices. Users can book tickets or watch trailers directly from the interface. The site also features a dynamic background slideshow for a cinematic feel.'
   },
   {
     id: 2,
-    title: 'tea 2',
-    description: 'Description for Project 2'
+    title: 'Wordly Dictionary',
+    description: `Wordly Dictionary is a single-page web application (SPA) that allows users to search for English words and view their definitions, parts of speech, examples, and pronunciation.
+
+  The application uses the Wiktionary REST API to retrieve word definitions and JavaScript to display the results dynamically without reloading the page.`
   }
 ]
 
