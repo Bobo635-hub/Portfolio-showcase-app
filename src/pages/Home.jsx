@@ -21,9 +21,15 @@ function Home() {
   const [projects, setProjects] = useState(projectsData)
   const [searchTerm, setSearchTerm] = useState('')
 
+  // function handleAddProject(newProject) {
+  //   setProjects([...projects, newProject])
+  // }
   function handleAddProject(newProject) {
-    setProjects([...projects, newProject])
-  }
+  setProjects((previousProjects) => [
+    ...previousProjects,
+    newProject
+  ])
+}
 
   function handleSearchChange(value) {
     setSearchTerm(value)
