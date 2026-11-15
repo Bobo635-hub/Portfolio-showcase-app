@@ -1,18 +1,76 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio Showcase App
 
-Currently, two official plugins are available:
+A responsive React application that allows users to showcase their projects, add new projects dynamically, and search through existing projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Display a collection of projects.
+- Add new projects using a form.
+- Search projects by title or description.
+- Display a message when no matching projects are found.
+- Responsive layout for desktop and mobile screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- Vite
+- HTML
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Portfolio-showcase-app
+## React Concepts Demonstrated
+
+- **Components:** The application is divided into reusable components.
+- **Props:** Data and functions are passed between parent and child components.
+- **State Management:** The `useState` hook manages projects and search input.
+- **Event Handling:** Form submission and search input changes are handled through events.
+- **Conditional Rendering:** Displays messages depending on whether projects are available.
+- **List Rendering:** Uses `.map()` to display project cards dynamically.
+- **Filtering:** Uses `.filter()` to search projects by title and description.
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Bobo635-hub/Portfolio-showcase-app.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd Portfolio-showcase-app
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Production Build
+
+To create a production build, run:
+
+```bash
+npm run build
+```
+
+## Live Demo
+
+https://bobo635-hub.github.io/Portfolio-showcase-app/
+
+## Author
+
+Rachel Wanjohi
+
 
