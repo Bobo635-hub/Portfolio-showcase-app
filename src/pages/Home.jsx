@@ -16,6 +16,11 @@ const projectsData = [
     description: `Wordly Dictionary is a single-page web application (SPA) that allows users to search for English words and view their definitions, parts of speech, examples, and pronunciation.
 
   The application uses the Wiktionary REST API to retrieve word definitions and JavaScript to display the results dynamically without reloading the page.`
+  },
+  {
+    id: 3,
+    title: 'Portfolio Website',
+    description: 'This is my personal portfolio website, created to showcase my skills, projects, and learning journey as a junior software developer. The portfolio is designed using HTML, CSS, and JavaScript and includes responsive layouts for desktop, tablet, and mobile devices.'
   }
 ]
 
